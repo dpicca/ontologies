@@ -1,0 +1,1389 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl"
+     versionIRI="https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.ttl">
+    <Prefix name="" IRI="http://literary_characters_psycological_profiles.owl#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="emo" IRI="http://arsemotica.di.unito.it/ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="emoart" IRI="http://arsemotica.di.unito.it/artifacts#"/>
+    <Prefix name="ma-ont" IRI="http://www.w3.org/ns/ma-ont#"/>
+    <Import>http://lemon-model.net/lemon</Import>
+    <Import>http://www.w3.org/ns/ma-ont#</Import>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://orcid.org/0000-0002-1740-519X</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://orcid.org/0000-0002-8323-8764</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://orcid.org/0000-0003-2014-0855</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal>Characters Profiles Ontology (CPO)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Literary Characters Profile Ontology aligned with FOAF, Lemon and the ArsEmotica Ontology. In this release, the classes concerning the emotion are also linked to DBpedia according to the Linked Data framework.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Acceptance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Admiration"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Aggressiveness"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Amazement"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Anger"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Annoyance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Anticipation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Apprehension"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Awe"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Boredom"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Contempt"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Disapproval"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Disgust"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Distraction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Ecstacy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Emotion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Fear"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Grief"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Interest"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:ItalianWord"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Joy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Lemon_Import"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Loathing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Love"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Optimism"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Pensiveness"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Rage"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Remorse"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Sadness"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Serenity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Submission"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Surprise"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Terror"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Trust"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Vigilance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Word"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="emo:Wordnet_Sense"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Agreeablness"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Antagonistic"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Antagonistic_Words"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":AntiHero"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Careless"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Carelessness_Denoting_Words"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Cautious"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Cautiousness_denoting_Words"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Compassion_denoting_Words"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Compassionate"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Conscientiousness"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Extraversion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Extroversion_denoting_Words"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Extrovert"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Hero"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Introversion_denoting_Word"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Introvert"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Narrative_Roles"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Nervous"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Nervousness_denoting_Words"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Neuroticism"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":OpenMinded"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":OpenMindedness_denoting_Words"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Openness"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Organized"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Organized_Words"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Personality_Profiles"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Safeguard_denoting_Words"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Safeguarding"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Villain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://org.semanticweb.owlapi/error#Error1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://org.semanticweb.owlapi/error#Error2"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ma-ont:Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="emoart:hasEmotion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="emo:EmotionGeneratedByMedia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="emo:ExpressOppositeEmotion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="emo:direct_reference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="emo:hasEmotionalWord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="emo:operateNear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":described_by_word"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":has_Personality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="ma-ont:hasCreator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="emo:hasScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="ma-ont:title"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="emoart:Anger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="emoart:Love"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="emo:AkiraZakamoto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="emo:preoccupato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="emo:vergogna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Anger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Love"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/page/Turin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Antagonism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Nervous_Personality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:rest"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="rdf:List"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://lemon-model.net/lemon#generates"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:cardinality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="rdf:nil"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:first"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://purl.org/dc/terms/Agent"/>
+        <Class abbreviatedIRI="ma-ont:Agent"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Acceptance"/>
+        <Class abbreviatedIRI="emo:Trust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Acceptance"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Admiration"/>
+        <Class abbreviatedIRI="emo:Trust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Admiration"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Aggressiveness"/>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Aggressiveness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Anger"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Aggressiveness"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Anticipation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Amazement"/>
+        <Class abbreviatedIRI="emo:Surprise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Amazement"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Anger"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Anger"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+            <Class abbreviatedIRI="emo:Terror"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Anger"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="emo:Anticipation"/>
+                <Class abbreviatedIRI="emo:Disgust"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Anger"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Annoyance"/>
+        <Class abbreviatedIRI="emo:Anger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Annoyance"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Anticipation"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Anticipation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+            <Class abbreviatedIRI="emo:Surprise"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Anticipation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="emo:Anger"/>
+                <Class abbreviatedIRI="emo:Joy"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Anticipation"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Apprehension"/>
+        <Class abbreviatedIRI="emo:Terror"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Apprehension"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Awe"/>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Awe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Surprise"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Awe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Terror"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+        <Class abbreviatedIRI="emo:Emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Boredom"/>
+        <Class abbreviatedIRI="emo:Disgust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Boredom"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+        <Class abbreviatedIRI="emo:Emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Contempt"/>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Contempt"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Anger"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Contempt"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Disgust"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Disapproval"/>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Disapproval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Sadness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Disapproval"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Surprise"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Disgust"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Disgust"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+            <Class abbreviatedIRI="emo:Trust"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Disgust"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="emo:Anger"/>
+                <Class abbreviatedIRI="emo:Sadness"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Disgust"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Distraction"/>
+        <Class abbreviatedIRI="emo:Surprise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Distraction"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Ecstacy"/>
+        <Class abbreviatedIRI="emo:Joy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Ecstacy"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Fear"/>
+        <Class abbreviatedIRI="emo:Terror"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Fear"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Grief"/>
+        <Class abbreviatedIRI="emo:Sadness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Grief"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Interest"/>
+        <Class abbreviatedIRI="emo:Anticipation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Interest"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:ItalianWord"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Joy"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Joy"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+            <Class abbreviatedIRI="emo:Sadness"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Joy"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="emo:Anticipation"/>
+                <Class abbreviatedIRI="emo:Trust"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Joy"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Loathing"/>
+        <Class abbreviatedIRI="emo:Disgust"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Loathing"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Love"/>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Love"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Joy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Love"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Trust"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Optimism"/>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Optimism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Anticipation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Optimism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Joy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Pensiveness"/>
+        <Class abbreviatedIRI="emo:Sadness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Pensiveness"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Rage"/>
+        <Class abbreviatedIRI="emo:Anger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Rage"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Remorse"/>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Remorse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Disgust"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Remorse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Sadness"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Sadness"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Sadness"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+            <Class abbreviatedIRI="emo:Joy"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Sadness"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="emo:Disgust"/>
+                <Class abbreviatedIRI="emo:Surprise"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Sadness"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Serenity"/>
+        <Class abbreviatedIRI="emo:Joy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Serenity"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Submission"/>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Submission"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Terror"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Submission"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+            <Class abbreviatedIRI="emo:Trust"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Surprise"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Surprise"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+            <Class abbreviatedIRI="emo:Anticipation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Surprise"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="emo:Sadness"/>
+                <Class abbreviatedIRI="emo:Terror"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Surprise"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Terror"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Terror"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+            <Class abbreviatedIRI="emo:Anger"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Terror"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="emo:Surprise"/>
+                <Class abbreviatedIRI="emo:Trust"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Terror"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Trust"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Trust"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+            <Class abbreviatedIRI="emo:Disgust"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Trust"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="emo:Joy"/>
+                <Class abbreviatedIRI="emo:Terror"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Trust"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Vigilance"/>
+        <Class abbreviatedIRI="emo:Anticipation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Vigilance"/>
+        <DataHasValue>
+            <DataProperty abbreviatedIRI="emo:hasScore"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="emo:Wordnet_Sense"/>
+        <Class IRI="http://lemon-model.net/lemon#LexicalSense"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://lemon-model.net/lemon#generates"/>
+        <Class abbreviatedIRI="emo:Lemon_Import"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Agreeablness"/>
+        <Class abbreviatedIRI=":Personality_Profiles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Antagonistic"/>
+        <Class abbreviatedIRI=":Agreeablness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Antagonistic_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":AntiHero"/>
+        <Class abbreviatedIRI=":Narrative_Roles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":AntiHero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI=":has_Personality"/>
+            <ObjectIntersectionOf>
+                <Class abbreviatedIRI=":Antagonistic"/>
+                <ObjectUnionOf>
+                    <Class abbreviatedIRI=":Introvert"/>
+                    <Class abbreviatedIRI=":Nervous"/>
+                    <Class abbreviatedIRI=":OpenMinded"/>
+                </ObjectUnionOf>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Careless"/>
+        <Class abbreviatedIRI=":Conscientiousness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Carelessness_Denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Cautious"/>
+        <Class abbreviatedIRI=":Openness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Cautiousness_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Compassion_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Compassionate"/>
+        <Class abbreviatedIRI=":Agreeablness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Conscientiousness"/>
+        <Class abbreviatedIRI=":Personality_Profiles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Extraversion"/>
+        <Class abbreviatedIRI=":Personality_Profiles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Extroversion_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Extrovert"/>
+        <Class abbreviatedIRI=":Extraversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Hero"/>
+        <Class abbreviatedIRI=":Narrative_Roles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Hero"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI=":has_Personality"/>
+            <ObjectIntersectionOf>
+                <Class abbreviatedIRI=":Compassionate"/>
+                <ObjectIntersectionOf>
+                    <Class abbreviatedIRI=":Extrovert"/>
+                    <Class abbreviatedIRI=":OpenMinded"/>
+                    <Class abbreviatedIRI=":Organized"/>
+                    <Class abbreviatedIRI=":Safeguarding"/>
+                </ObjectIntersectionOf>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Introversion_denoting_Word"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Introvert"/>
+        <Class abbreviatedIRI=":Extraversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Nervous"/>
+        <Class abbreviatedIRI=":Neuroticism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Nervousness_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Neuroticism"/>
+        <Class abbreviatedIRI=":Personality_Profiles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":OpenMinded"/>
+        <Class abbreviatedIRI=":Openness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":OpenMindedness_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Openness"/>
+        <Class abbreviatedIRI=":Personality_Profiles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Organized"/>
+        <Class abbreviatedIRI=":Conscientiousness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Organized_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Safeguard_denoting_Words"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Safeguarding"/>
+        <Class abbreviatedIRI=":Neuroticism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Villain"/>
+        <Class abbreviatedIRI=":Narrative_Roles"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Villain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI=":has_Personality"/>
+            <ObjectIntersectionOf>
+                <Class abbreviatedIRI=":Antagonistic"/>
+                <ObjectIntersectionOf>
+                    <Class abbreviatedIRI=":Careless"/>
+                    <Class abbreviatedIRI=":Cautious"/>
+                    <Class abbreviatedIRI=":Nervous"/>
+                </ObjectIntersectionOf>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://org.semanticweb.owlapi/error#Error1"/>
+        <Class abbreviatedIRI="emo:Lemon_Import"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://org.semanticweb.owlapi/error#Error2"/>
+        <Class abbreviatedIRI="emo:Lemon_Import"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="emo:Aggressiveness"/>
+        <Class abbreviatedIRI="emo:Awe"/>
+        <Class abbreviatedIRI="emo:Contempt"/>
+        <Class abbreviatedIRI="emo:Disapproval"/>
+        <Class abbreviatedIRI="emo:Love"/>
+        <Class abbreviatedIRI="emo:Optimism"/>
+        <Class abbreviatedIRI="emo:Remorse"/>
+        <Class abbreviatedIRI="emo:Submission"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="emo:Anger"/>
+        <Class abbreviatedIRI="emo:Anticipation"/>
+        <Class abbreviatedIRI="emo:Disgust"/>
+        <Class abbreviatedIRI="emo:Joy"/>
+        <Class abbreviatedIRI="emo:Sadness"/>
+        <Class abbreviatedIRI="emo:Surprise"/>
+        <Class abbreviatedIRI="emo:Terror"/>
+        <Class abbreviatedIRI="emo:Trust"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Antagonistic"/>
+        <Class abbreviatedIRI=":Compassionate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Careless"/>
+        <Class abbreviatedIRI=":Organized"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Extrovert"/>
+        <Class abbreviatedIRI=":Introvert"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Hero"/>
+        <Class abbreviatedIRI=":Villain"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Narrative_Roles"/>
+        <Class abbreviatedIRI=":Personality_Profiles"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI=":Nervous"/>
+        <Class abbreviatedIRI=":Safeguarding"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Nervousness_denoting_Words"/>
+        <NamedIndividual abbreviatedIRI="emo:preoccupato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Introversion_denoting_Word"/>
+        <NamedIndividual abbreviatedIRI="emo:vergogna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Antagonistic"/>
+        <NamedIndividual abbreviatedIRI=":Antagonism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Nervous"/>
+        <NamedIndividual abbreviatedIRI=":Nervous_Personality"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual abbreviatedIRI="emoart:Anger"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Anger"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual abbreviatedIRI="emoart:Love"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Love"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+        <NamedIndividual abbreviatedIRI="emoart:Anger"/>
+        <NamedIndividual abbreviatedIRI="emoart:Love"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="emo:operateNear"/>
+        <NamedIndividual abbreviatedIRI="emo:AkiraZakamoto"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Turin"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="emoart:hasEmotion"/>
+        <ObjectProperty abbreviatedIRI="emo:EmotionGeneratedByMedia"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="emo:ExpressOppositeEmotion"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+        <Class abbreviatedIRI="emo:ComplexEmotion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":described_by_word"/>
+        <Class abbreviatedIRI="ma-ont:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":has_Personality"/>
+        <Class abbreviatedIRI=":Narrative_Roles"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":has_Personality"/>
+        <Class abbreviatedIRI="ma-ont:Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="emoart:hasEmotion"/>
+        <Class abbreviatedIRI="emo:Emotion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="emo:hasEmotionalWord"/>
+        <Class abbreviatedIRI="emo:Word"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="emo:hasOpposite"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="emo:hasSibling"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="emo:isComposedOf"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":denotes_emotion"/>
+        <Class abbreviatedIRI="emo:Emotion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":described_by_word"/>
+        <Class IRI="http://lemon-model.net/lemon#Word"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":has_Personality"/>
+        <Class abbreviatedIRI=":Personality_Profiles"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="emo:hasScore"/>
+        <Class abbreviatedIRI="emo:BasicEmotion"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="emo:hasScore"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI="ma-ont:Agent"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty abbreviatedIRI=":described_by_word"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#z"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI=":Antagonistic_Words"/>
+                <Variable IRI="urn:swrl:var#z"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty abbreviatedIRI=":has_Personality"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <NamedIndividual abbreviatedIRI=":Antagonism"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI="ma-ont:Agent"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty abbreviatedIRI=":described_by_word"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#z"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI=":Introversion_denoting_Word"/>
+                <Variable IRI="urn:swrl:var#z"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty abbreviatedIRI=":has_Personality"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#Introvert"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI="ma-ont:Agent"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty abbreviatedIRI=":described_by_word"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#z"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class abbreviatedIRI=":Nervousness_denoting_Words"/>
+                <Variable IRI="urn:swrl:var#z"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty abbreviatedIRI=":has_Personality"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <NamedIndividual abbreviatedIRI=":Nervous_Personality"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/page/Terror</IRI>
+        <Literal>http://dbpedia.org/page/Terror</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483693"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:hasValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483694"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">2.0</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
