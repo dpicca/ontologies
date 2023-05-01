@@ -7,3 +7,5 @@ In folder [`V1`](./V1) there is the original ontology (T-Box and A-Box). In fold
 
 1. [`model.ttl`](model.ttl) the Lemon-based ontology of narrative roles and psychological profiles;
 1. [`dataset.nt`](dataset.nt) is a catalogue of English and Italian words that denote said profiles.
+
+In folder [`V3`](./V3) there is the [`V2`](./V2) ontology [`model.ttl`](model.ttl) added with the NIF vocabulary
