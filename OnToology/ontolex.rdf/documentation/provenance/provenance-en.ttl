@@ -1,0 +1,32 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "Lexicon Model for Ontologies - Core";
+	 prov:wasAttributedTo <http://john.mccr.ae/>;
+	 dc:creator <http://john.mccr.ae/>;
+	 prov:wasAttributedTo <http://www.cimiano.de/>;
+	 dc:creator <http://www.cimiano.de/>;
+	 prov:wasAttributedTo <http://art.uniroma2.it/fiorelli/>;
+	 dc:contributor <http://art.uniroma2.it/fiorelli/>;
+	 prov:wasAttributedTo <http://art.uniroma2.it/stellato/>;
+	 dc:contributor <http://art.uniroma2.it/stellato/>;
+	 prov:wasAttributedTo <http://jogracia.url.ph/web/>;
+	 dc:contributor <http://jogracia.url.ph/web/>;
+	 prov:wasAttributedTo <http://mayor2.dia.fi.upm.es/oeg-upm/index.php/en/teachers/52-emontiel>;
+	 dc:contributor <http://mayor2.dia.fi.upm.es/oeg-upm/index.php/en/teachers/52-emontiel>;
+	 prov:wasAttributedTo <http://www.dfki.de/~declerck/>;
+	 dc:contributor <http://www.dfki.de/~declerck/>;
+	 prov:wasAttributedTo <http://www.ilc.cnr.it/en/content/anas-fahad-khan>;
+	 dc:contributor <http://www.ilc.cnr.it/en/content/anas-fahad-khan>;
+	 prov:wasAttributedTo <http://www.istc.cnr.it/people/aldo-gangemi>;
+	 dc:contributor <http://www.istc.cnr.it/people/aldo-gangemi>;
+	 prov:wasAttributedTo <http://www.oeg-upm.net/index.php/teachers/53-lupe>;
+	 dc:contributor <http://www.oeg-upm.net/index.php/teachers/53-lupe>;
+	 prov:wasAttributedTo <http://www.paulbuitelaar.net/>;
+	 dc:contributor <http://www.paulbuitelaar.net/>;
+	 prov:wasAttributedTo <https://sites.google.com/site/francescafrontini/>;
+	 dc:contributor <https://sites.google.com/site/francescafrontini/>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.

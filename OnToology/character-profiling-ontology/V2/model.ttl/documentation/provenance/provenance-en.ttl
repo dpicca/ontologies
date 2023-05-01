@@ -1,0 +1,14 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.ttl> a prov:Entity;
+	 dc:title "Characters Profiles Ontology (CPO)";
+	 prov:wasAttributedTo <http://orcid.org/0000-0002-1740-519X>;
+	 dc:creator <http://orcid.org/0000-0002-1740-519X>;
+	 prov:wasAttributedTo <http://orcid.org/0000-0002-8323-8764>;
+	 dc:creator <http://orcid.org/0000-0002-8323-8764>;
+	 prov:wasAttributedTo <http://orcid.org/0000-0003-2014-0855>;
+	 dc:creator <http://orcid.org/0000-0003-2014-0855>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.

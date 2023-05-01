@@ -1,0 +1,16 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "semiotics:Meaning" "ontolex:Word" "ontolex:Affix" "ontolex:ConceptSet" "http://www.w3.org/2004/02/skos/core#ConceptScheme" "ontolex:LexicalEntry" "semiotics:Expression" "ontolex:Form" "ontolex:LexicalConcept" "http://www.w3.org/2004/02/skos/core#Concept" "ontolex:LexicalSense" "ontolex:MultiWordExpression" ; /*classes style*/
+	"ontolex:ConceptSet" -> "http://www.w3.org/2004/02/skos/core#ConceptScheme" [ label = "rdfs:subClassOf" ];
+	"ontolex:LexicalSense" -> "semiotics:Meaning" [ label = "rdfs:subClassOf" ];
+	"ontolex:LexicalEntry" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"ontolex:LexicalEntry" -> "semiotics:Expression" [ label = "rdfs:subClassOf" ];
+	"ontolex:LexicalConcept" -> "semiotics:Meaning" [ label = "rdfs:subClassOf" ];
+	"ontolex:LexicalConcept" -> "http://www.w3.org/2004/02/skos/core#Concept" [ label = "rdfs:subClassOf" ];
+	"ontolex:Affix" -> "ontolex:LexicalEntry" [ label = "rdfs:subClassOf" ];
+	"ontolex:MultiWordExpression" -> "ontolex:LexicalEntry" [ label = "rdfs:subClassOf" ];
+	"ontolex:Form" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"ontolex:Word" -> "ontolex:LexicalEntry" [ label = "rdfs:subClassOf" ];
+
+}

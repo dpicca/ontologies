@@ -1,0 +1,783 @@
+<http://www.w3.org/ns/lemon/ontolex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/ns/lemon/ontolex> <http://creativecommons.org/ns#licence> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<http://www.w3.org/ns/lemon/ontolex> <http://creativecommons.org/ns#license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/contributor> <http://art.uniroma2.it/fiorelli/> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/contributor> <http://art.uniroma2.it/stellato/> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/contributor> <http://jogracia.url.ph/web/> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/contributor> <http://mayor2.dia.fi.upm.es/oeg-upm/index.php/en/teachers/52-emontiel> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/contributor> <http://www.dfki.de/~declerck/> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/contributor> <http://www.ilc.cnr.it/en/content/anas-fahad-khan> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/contributor> <http://www.istc.cnr.it/people/aldo-gangemi> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/contributor> <http://www.oeg-upm.net/index.php/teachers/53-lupe> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/contributor> <http://www.paulbuitelaar.net/> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/contributor> <https://sites.google.com/site/francescafrontini/> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/creator> <http://john.mccr.ae/> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/creator> <http://www.cimiano.de/> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/description> "A model for the representation of lexical information relative to ontologies. Core module."@en .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/issued> "2016-01-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/modified> "2016-01-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/community/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/rights> "CC-Zero" .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/dc/elements/1.1/title> "Lexicon Model for Ontologies - Core"@en .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ontolex" .
+<http://www.w3.org/ns/lemon/ontolex> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3.org/ns/lemon/ontolex#" .
+<http://www.w3.org/ns/lemon/ontolex> <http://www.w3.org/2000/01/rdf-schema#comment> "-Version 1.0: depreciation with minor change in metadata for LOV publication\n-Version 1.1: creation"@en .
+<http://www.w3.org/ns/lemon/ontolex> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#licence
+<http://creativecommons.org/ns#licence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/issued
+<http://purl.org/dc/elements/1.1/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/modified
+<http://purl.org/dc/elements/1.1/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#langString
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/2002/07/owl#topObjectProperty
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "in scheme"@en .
+# 
+# http://www.w3.org/ns/lemon/ontolex#canonicalForm
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/lemon/ontolex#lexicalForm> .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#Form> .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'canonical form' property relates a lexical entry to its canoncical or dictionary form. This usually indicates the \"lemma\" form of a lexical entry. "@en .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'каноническая форма' связывает словарную единицу с ее канонической или словарной формой. Она обычно обозначает \"лемму\" словарной единицы."@ru .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "canonical form"@en .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "canonieke vorm"@nl .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "forma canonica"@it .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "forma canonica"@pt .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "forma canónica"@es .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "forme canonique"@fr .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "formă canonică"@ro .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "kanoniese vorm"@af .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "kanonische Form"@de .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "kanonisk form "@sv .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "каноническая форма"@ru .
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#concept
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/lemon/ontolex#isConceptOf> .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'concept' property relates an ontological entity to a lexical concept that represents the corresponding meaning."@en .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'понятие' связывает сущность в онтологии с лексическим понятием, которое представляет соответствующее значение."@ru .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "Konzept"@de .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "begrepp"@sv .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "begrip"@nl .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "conceito"@pt .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "concept"@en .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "concept"@fr .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "concept"@ro .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "concepto"@es .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "concetto"@it .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "konsep"@af .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2000/01/rdf-schema#label> "понятие"@ru .
+<http://www.w3.org/ns/lemon/ontolex#concept> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#denotes
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes> .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/lemon/ontolex#reference> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/lemon/ontolex#sense> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'denotes' property relates a lexical entry to a predicate in a given ontology that represents its meaning and has some denotational or model-theoretic semantics. "@en .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'обозначает' связывает словарную единицу с предикатом в онтологии, который представляет ее значение и обладает денотативной или теоретико-модельной семантикой."@ru .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "betecknar"@sv .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "bezeichnet"@de .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "denota"@es .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "denota"@it .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "denota"@pt .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "denotes"@en .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "denotă"@ro .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "dui aan"@af .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "duidet aan"@nl .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "dénote"@fr .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2000/01/rdf-schema#label> "обозначает"@ru .
+<http://www.w3.org/ns/lemon/ontolex#denotes> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#evokes
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/lemon/ontolex#sense> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'evokes' property relates a lexical entry to one of the lexical concepts it evokes, i.e. the mental concept that speakers of a language might associate when hearing the lexical entry."@en .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'порождает' связывает словарную единицу с одним из лексических понятий, которую она порождает, то есть мыслительное понятие, которое возникает в сознании говорящих, когда они слышат данную словарную единицу."@ru .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "evoca"@es .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "evoca"@it .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "evoca"@pt .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "evocă"@ro .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "evokes"@en .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "framkallar"@sv .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "lokt uit"@nl .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "roep op"@af .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "ruft hervor"@de .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "évoque"@fr .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2000/01/rdf-schema#label> "порождает"@ru .
+<http://www.w3.org/ns/lemon/ontolex#evokes> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#isConceptOf
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property formalizes the meaning of a Lexical Concept by linking it to a particular ontological meaning."@en .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Это свойство формализует значение 'Лексического Понятия', связывая его с отдельным значением в онтологии."@ru .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "es concepto de"@es .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "est un concept pour "@fr .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "este concept a(l)"@ro .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "is concept of"@en .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "is concept van"@nl .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "is konsep van"@af .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "ist Konzept von"@de .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "är begrepp för"@sv .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "è concetto di "@it .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "é conceito de"@pt .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2000/01/rdf-schema#label> "является понятием"@ru .
+<http://www.w3.org/ns/lemon/ontolex#isConceptOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#isDenotedBy
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/lemon/ontolex#denotes> .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The object property isDenotedBy is the inverse of the object property denotes."@en .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство объекта 'обозначается' является обратным к свойству объекта 'обозначает'."@ru .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "betecknas av"@sv .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "es denotado por"@es .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "est dénoté par"@fr .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "este denotat cu"@ro .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is denoted by"@en .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wird bezeichnet von"@de .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "word aangedui deur"@af .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wordt aangeduidet door"@nl .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "è denotato da"@it .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "é denotado por"@pt .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2000/01/rdf-schema#label> "обозначается"@ru .
+<http://www.w3.org/ns/lemon/ontolex#isDenotedBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#isEvokedBy
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/lemon/ontolex#evokes> .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The inverse relation to evokes."@en .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Отношение обратное к 'порождает'."@ru .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "es evocado por"@es .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "est évoqué par"@fr .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "este evocat de"@ro .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "framkallas av "@sv .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is evoked by"@en .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wird hervorgerufen von"@de .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "word opgeroep deur"@af .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wordt uitgelokt door"@nl .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "è evocato da"@it .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "порождается"@ru .
+<http://www.w3.org/ns/lemon/ontolex#isEvokedBy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalSense> .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The object property isLexicalizedSenseOf is the inverse property of lexicalized sense."@en .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство объекта 'является лексикализованным смыслом' представляет собой свойство, обратное к свойству 'лексикализованный смысл'."@ru .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "es l'acepción lexicalizado de"@es .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "est le sens lexicalisé de"@fr .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "este sens lexicalizat de"@ro .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "is geleksikaliseerde sin van"@af .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "is lexicalized sense of"@en .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "is lexikaal zin van"@nl .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "ist lexikalisierter Sinn von"@de .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "är lexikaliserad betydelse för"@sv .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "è il senso lessicalizzato di"@it .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "является лексикализованным смыслом"@ru .
+<http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#isReferenceOf
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/lemon/ontolex#reference> .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/lemon/synsem#OntoMap> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/lemon/ontolex#LexicalSense> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The object property isReferenceOf is the inverse property of reference."@en .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство объекта 'является референцией' представляет собой свойство, обратное к свойству 'референция'."@ru .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "es referencia de"@es .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "est référence de"@fr .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "este referință a(l)"@ro .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is reference of"@en .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is referentie van"@nl .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "is verwysing van"@af .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "ist Referenz von"@de .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "är referens för"@sv .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "è riferimento di"@it .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "é referência de"@pt .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2000/01/rdf-schema#label> "является референцией"@ru .
+<http://www.w3.org/ns/lemon/ontolex#isReferenceOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#isSenseOf
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalSense> .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The property isSenseOf is the inverse property of sense."@en .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'является смыслом' представляет собой свойство, обратное к свойству 'смысл'."@ru .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "es acepción de"@es .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "est signification de"@fr .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "este sens a(l)"@ro .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "is sense of"@en .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "is sin van"@af .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "is zin van"@nl .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "ist Sinn von"@de .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "är betydelse för"@sv .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "è il senso di"@it .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "é sentido de"@pt .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2000/01/rdf-schema#label> "является смыслом"@ru .
+<http://www.w3.org/ns/lemon/ontolex#isSenseOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#lexicalForm
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#Form> .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'lexical form' property relates a lexical entry to one grammatical form variant of the lexical entry."@en .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'лексическая форма' соотносит словарную единицу с одним вариантом грамматической формы словарной единицы."@ru .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "forma lessicale"@it .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "forma léxica"@es .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "forme lexicale"@fr .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "formă lexicală"@ro .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "leksikale vorm"@af .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "lexical form"@en .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "lexikaal vorm"@nl .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "lexikalische Form"@de .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "lexikonform"@sv .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2000/01/rdf-schema#label> "лексическая форма"@ru .
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#lexicalizedSense
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#LexicalSense> .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'lexicalized sense' property relates a lexical concept to a corresponding lexical sense that lexicalizes the concept."@en .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'лексикализованный смысл' связывает лексическое понятие с соответствующим лексическим смыслом, который лексикализует понятие."@ru .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#label> "acepción lexicalizada"@es .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#label> "geleksikaliseerde Sin"@af .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#label> "lexicalized sense"@en .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#label> "lexikaal zin"@nl .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#label> "lexikaliserad betydelse"@sv .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#label> "lexikalisierter Sinn"@de .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#label> "sens lexicalizat"@ro .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#label> "senso lessicalizzato"@it .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#label> "signification lexicalisé"@fr .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2000/01/rdf-schema#label> "лексикализованный смысл"@ru .
+<http://www.w3.org/ns/lemon/ontolex#lexicalizedSense> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#morphologicalPattern
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'morphological pattern' property indicates the morphological class of a word."@en .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'морфологическая модель' обозначает морфологический класс слова."@ru .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#label> "model morfologic"@ro .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#label> "morfologiese patroon"@af .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#label> "morfologische patroon"@nl .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#label> "morfologiskt mönster"@sv .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#label> "morphological pattern"@en .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#label> "morphologisches Muster"@de .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#label> "motivo morfologico"@it .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#label> "patron morphologique"@fr .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#label> "patrón morfológico"@es .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2000/01/rdf-schema#label> "морфологическая модель"@ru .
+<http://www.w3.org/ns/lemon/ontolex#morphologicalPattern> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#otherForm
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/lemon/ontolex#lexicalForm> .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#Form> .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#comment> "The  'other form' property relates a lexical entry to a non-preferred (\"non-lemma\") form that realizes the given lexical entry."@en .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'другая форма' связывает словарную единицу с малоупотребительной формой (\"не леммой\"), которая является реализацией данной словарной единицы"@ru .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "altra forma"@it .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "altă formă"@ro .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "ander form"@af .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "andere Form"@de .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "andere vorm"@nl .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "annan form"@sv .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "autre forme"@fr .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "other form"@en .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "otra forma"@es .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "outra forma"@pt .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2000/01/rdf-schema#label> "другая форма"@ru .
+<http://www.w3.org/ns/lemon/ontolex#otherForm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#reference
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/lemon/synsem#OntoMap> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/lemon/ontolex#LexicalSense> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'reference' property relates a lexical sense to an ontological predicate that represents the denotation of the corresponding lexical entry. "@en .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'референция' соотносит лексический смысл с предикатом в онтологии, который уточняет значение денотата (соответствующей словарной единицы)."@ru .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "Referenz"@de .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "reference"@en .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "referencia"@es .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "referens"@sv .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "referință"@ro .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "referntie"@nl .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "referência"@pt .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "riferimento"@it .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "référence"@fr .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "verwysing"@af .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2000/01/rdf-schema#label> "референция"@ru .
+<http://www.w3.org/ns/lemon/ontolex#reference> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#sense
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/lemon/ontolex#isSenseOf> .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#LexicalSense> .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'sense' property relates a lexical entry to one of its lexical senses. "@en .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'смысл' связывает словарную единицу с одним из ее лексических смыслов."@ru .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "Sinn"@de .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "acepción"@es .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "betydelse"@sv .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "sens"@ro .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "sense"@en .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "senso"@it .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "sentido"@pt .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "signification"@fr .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "sinne"@af .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "zin"@nl .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2000/01/rdf-schema#label> "смысл"@ru .
+<http://www.w3.org/ns/lemon/ontolex#sense> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#usage
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#LexicalSense> .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'usage' property indicates usage conditions or pragmatic implications when using the lexical entry to refer to the given ontological meaning."@en .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'употребление' обозначает условия использования или прагматическое значение при употреблении словарной единицы для соотнесения с определенным значением в онтологии."@ru .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#label> "Gebrauch"@de .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#label> "gebruik"@nl .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#label> "usage"@en .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#label> "usage"@fr .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#label> "uso"@es .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#label> "uso"@it .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2000/01/rdf-schema#label> "употребление"@ru .
+<http://www.w3.org/ns/lemon/ontolex#usage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#topDataProperty
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.w3.org/ns/lemon/ontolex#phoneticRep
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/lemon/ontolex#representation> .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#Form> .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'phonetic representation' property indicates one phonetic representation of the pronunciation of the form using a scheme such as the International Phonetic Alphabet (IPA). "@en .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'фонетическое представление' обозначает фонетическое представление произношения формы с использованием какой-либо схемы, например, Международного фонетического алфавита (IPA, МФА)."@ru .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#label> "fonetiese voorstelling"@af .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#label> "fonetische voorstelling"@nl .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#label> "fonetisk representation "@sv .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#label> "phonetic representation"@en .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#label> "phonetische Darstellung"@de .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#label> "rappresentazione fonetica"@it .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#label> "representación fonética"@es .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#label> "reprezentare fonetică"@ro .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#label> "représentation phonétique"@fr .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2000/01/rdf-schema#label> "фонетическое представление"@ru .
+<http://www.w3.org/ns/lemon/ontolex#phoneticRep> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#representation
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#Form> .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'representation' property indicates a string by which the form is represented according to some orthography. "@en .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'представление' обозначает некую последовательность, с помощью которой форма может быть представлена средствами орфографии."@ru .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "Darstellung"@de .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "rappresentazione"@it .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "representación"@es .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "representation"@en .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "representation"@sv .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "representação"@pt .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "reprezentare"@ro .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "représentation"@fr .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "voorstelling"@af .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "voorstelling"@nl .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2000/01/rdf-schema#label> "представление"@ru .
+<http://www.w3.org/ns/lemon/ontolex#representation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#writtenRep
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/lemon/ontolex#representation> .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/ontolex#Form> .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'written representation' property indicates the written representation of a form."@en .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'письменное представление' обозначает письменное представление формы."@ru .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "geskrewe voorstelling"@af .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "rappresentazione scritta"@it .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "representación escrita"@es .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "representação escrita"@pt .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "reprezentare scrisă"@ro .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "représentation écrite"@fr .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "schriftliche Darstellung"@de .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "schriftlijke voorstelling"@nl .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "skriven form "@sv .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "written representation"@en .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2000/01/rdf-schema#label> "письменное представление"@ru .
+<http://www.w3.org/ns/lemon/ontolex#writtenRep> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> <http://www.w3.org/2000/01/rdf-schema#label> "expression"@en .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning> <http://www.w3.org/2000/01/rdf-schema#label> "meaning"@en .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Resource
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "concept"@en .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#label> "concept scheme"@en .
+# 
+# http://www.w3.org/ns/lemon/ontolex#Affix
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#comment> "'Аффикс' - это словарная единица, которая представляет морфему (суффикс, префикс, инфикс, циркумфикс), добавляемую к основе слова для образования нового слова."@ru .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#comment> "An affix is a lexical entry that represents a morpheme (suffix, prefix, infix, circumfix) that is attached to a word stem to form a new word."@en .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#label> "Affix"@de .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#label> "affiks"@af .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#label> "affisso"@it .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#label> "affix"@en .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#label> "affix"@nl .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#label> "affix"@sv .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#label> "affixe"@fr .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#label> "afijo"@es .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#label> "aplică"@ro .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2000/01/rdf-schema#label> "аффикс"@ru .
+<http://www.w3.org/ns/lemon/ontolex#Affix> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#ConceptSet
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/lemon/ontolex#LexicalConcept> .
+_:genid11 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#comment> "'Набор понятий' представляет собой совокупность лексических понятий."@ru .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A concept set represents a collection of lexical concepts."@en .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#label> "Konzeptsatz"@de .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#label> "banca concetti"@it .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#label> "banque de conepts"@fr .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#label> "concept set"@en .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#label> "conjunto de conceptos"@es .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#label> "verzameling van begrippen"@nl .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2000/01/rdf-schema#label> "набор понятий"@ru .
+<http://www.w3.org/ns/lemon/ontolex#ConceptSet> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#Form
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+_:genid12 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/lemon/ontolex#writtenRep> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#comment> "'Форма' представляет одну грамматическую реализацию словарной единицы."@ru .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#comment> "A form represents one grammatical realization of a lexical entry."@en .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "Form"@de .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "Forma"@pt .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "form"@en .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "form"@sv .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "forma"@es .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "forma"@it .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "forme"@fr .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "formă"@ro .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "vorm"@af .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "vorm"@nl .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2000/01/rdf-schema#label> "форма"@ru .
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#LexicalConcept
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "'Лексическое понятие' представляет элемент абстрактного мышления, понятие или единицу мысли, которая может быть лексикализована определенным набором смыслов."@ru .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "A lexical concept represents a mental abstraction, concept or unit of thought that embodies the meaning of one or more lexical entries."@en .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "conceito léxico"@pt .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "concept lexical"@fr .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "concept lexical"@ro .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "concepto lexicalizado"@es .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "concetto lessicale"@it .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "leksikale konsep"@af .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "lexical concept"@en .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "lexikaal concept"@nl .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "lexikalisches Konzept"@de .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "lexikaliskt begrepp"@sv .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2000/01/rdf-schema#label> "лексическое понятие"@ru .
+<http://www.w3.org/ns/lemon/ontolex#LexicalConcept> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#LexicalEntry
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/lemon/ontolex#Form> .
+_:genid13 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/lemon/ontolex#lexicalForm> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/lemon/ontolex#Form> .
+_:genid14 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/lemon/ontolex#canonicalForm> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "'Словарная единица' представляет собой единицу анализа словаря, которая состоит из совокупности грамматически связанных форм и совокупности основных значений, ассоциирующихся со всеми этими формами. 'Словарная единица' - это слово, словосочетание или аффикс одной части речи, морфологической модели, этимологии и набора значений."@ru .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "A lexical entry represents a unit of analysis of the lexicon that consists of a set of forms that are grammatically related and a set of base meanings that are associated with all of these forms. Thus, a lexical entry is a word, multiword expression or affix with a single part-of-speech, morphological pattern, etymology and set of senses."@en .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "Lexikoneintrag"@de .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "entrada léxica"@es .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "entrata lessicale"@it .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "entrée lexicale"@fr .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "leksikale inskrywing"@af .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "lexical entry"@en .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "lexikaal item"@nl .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "lexikoningång"@sv .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "înregistrare lexicală"@ro .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "словарная единица"@ru .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#LexicalSense
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/lemon/ontolex#isSenseOf> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/lemon/ontolex#reference> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#comment> "'Лексический смысл' обозначает лексическое значение словарной единицы, когда оно понимается как относящееся к соответствующему элементу онтологии. 'Лексический смысл' представляет собой овеществление пары, состоящей из однозначно определяемой словарной единицы и однозначно определяемой сущности отнологии, к которой относится данный лексический смысл. Связь между словарной единицей и сущностью в онтологии посредством объекта 'Лексический Смысл' подразумевает, что словарная статья может быть использована для отсылки к соответствующей сущности в онтологии."@ru .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#comment> "A lexical sense represents the lexical meaning of a lexical entry when interpreted as referring to the corresponding ontology element. A lexical sense thus represents a reification of a pair of a uniquely determined lexical entry and a uniquely determined ontology entity it refers to. A link between a lexical entry and an ontology entity via a Lexical Sense object implies that the lexical entry can be used to refer to the ontology entity in question."@en .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#label> "acepción léxica"@es .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#label> "leksikale sin"@af .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#label> "lexical sense"@en .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#label> "lexikaal zin"@nl .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#label> "lexikalischer Sinn"@de .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#label> "lexikonbetydelse"@sv .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#label> "sens lexical"@ro .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#label> "senso lessicale"@it .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#label> "signification lexicale"@fr .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2000/01/rdf-schema#label> "лексический смысл"@ru .
+<http://www.w3.org/ns/lemon/ontolex#LexicalSense> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#MultiWordExpression
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "'Словосочетание' - это словарная единица, состоящая из двух или более слов."@ru .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "A multiword expression is a lexical entry that consists of two or more words."@en .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Mehrwortausdruck"@de .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#label> "espressione di gruppi di parole"@it .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#label> "expresie din mai multe cuvinte"@ro .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#label> "expresión multipalabra"@es .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#label> "expression à mots multiples"@fr .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#label> "flerordsuttryck"@sv .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#label> "multi-word expression"@en .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#label> "multiwoorduitdrukking"@af .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#label> "mutliwoorduitdrukking"@nl .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2000/01/rdf-schema#label> "словосочетание"@ru .
+<http://www.w3.org/ns/lemon/ontolex#MultiWordExpression> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#Word
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#comment> "'Слово' - это словарная единица, представяющая собой единичную реализацию лексемы."@ru .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#comment> "A word is a lexical entry that consists of a single token."@en .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#label> "Wort"@de .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#label> "cuvânt"@ro .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#label> "mot"@fr .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#label> "ord"@sv .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#label> "palabra"@es .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#label> "parola"@it .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#label> "woord"@af .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#label> "woord"@nl .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#label> "word"@en .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2000/01/rdf-schema#label> "слово"@ru .
+<http://www.w3.org/ns/lemon/ontolex#Word> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/synsem#OntoMap
+<http://www.w3.org/ns/lemon/synsem#OntoMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/lemon/ontolex
+<http://www.w3.org/ns/lemon/ontolex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/ns/lemon/ontolex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
