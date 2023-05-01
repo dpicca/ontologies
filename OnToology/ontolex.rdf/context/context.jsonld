@@ -1,0 +1,200 @@
+{
+  "@context" : {
+    "usage" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#usage",
+      "@type" : "@id"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "lexicalForm" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#lexicalForm",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "concept" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#concept",
+      "@type" : "@id"
+    },
+    "LexicalSense" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalSense"
+    },
+    "isSenseOf" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#isSenseOf",
+      "@type" : "@id"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/elements/1.1/issued"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "canonicalForm" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#canonicalForm",
+      "@type" : "@id"
+    },
+    "isDenotedBy" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#isDenotedBy",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "isReferenceOf" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#isReferenceOf",
+      "@type" : "@id"
+    },
+    "Expression" : {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "Affix" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#Affix"
+    },
+    "writtenRep" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#writtenRep",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "evokes" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#evokes",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "representation" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#representation",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "LexicalEntry" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalEntry"
+    },
+    "Form" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#Form"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "MultiWordExpression" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#MultiWordExpression"
+    },
+    "morphologicalPattern" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#morphologicalPattern",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Meaning" : {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Meaning"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "LexicalConcept" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalConcept"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "reference" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#reference",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "Vocabulary" : {
+      "@id" : "http://purl.org/vocommons/voaf#Vocabulary"
+    },
+    "licence" : {
+      "@id" : "http://creativecommons.org/ns#licence"
+    },
+    "isEvokedBy" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#isEvokedBy",
+      "@type" : "@id"
+    },
+    "denotes" : {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/elements/1.1/modified"
+    },
+    "isLexicalizedSenseOf" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#isLexicalizedSenseOf",
+      "@type" : "@id"
+    },
+    "Word" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#Word"
+    },
+    "ConceptSet" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#ConceptSet"
+    },
+    "Resource" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "lexicalizedSense" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#lexicalizedSense",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "sense" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#sense",
+      "@type" : "@id"
+    },
+    "OntoMap" : {
+      "@id" : "http://www.w3.org/ns/lemon/synsem#OntoMap"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "isConceptOf" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#isConceptOf",
+      "@type" : "@id"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "otherForm" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#otherForm",
+      "@type" : "@id"
+    },
+    "phoneticRep" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#phoneticRep",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    }
+  }
+}

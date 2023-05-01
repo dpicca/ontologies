@@ -1,0 +1,1014 @@
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> <http://www.w3.org/2002/07/owl#versionIRI> <https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.ttl> .
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> <http://www.w3.org/2002/07/owl#imports> <http://lemon-model.net/lemon> .
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ma-ont#> .
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-1740-519X> .
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-8323-8764> .
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0003-2014-0855> .
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> <http://purl.org/dc/elements/1.1/title> "Characters Profiles Ontology (CPO)" .
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "Literary Characters Profile Ontology aligned with FOAF, Lemon and the ArsEmotica Ontology. In this release, the classes concerning the emotion are also linked to DBpedia according to the Linked Data framework." .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#hasValue
+<http://www.w3.org/2002/07/owl#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://arsemotica.di.unito.it/artifacts#hasEmotion
+<http://arsemotica.di.unito.it/artifacts#hasEmotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsemotica.di.unito.it/artifacts#hasEmotion> <http://www.w3.org/2002/07/owl#inverseOf> <http://arsemotica.di.unito.it/ontology#EmotionGeneratedByMedia> .
+<http://arsemotica.di.unito.it/artifacts#hasEmotion> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsemotica.di.unito.it/ontology#Emotion> .
+# 
+# http://arsemotica.di.unito.it/ontology#EmotionGeneratedByMedia
+<http://arsemotica.di.unito.it/ontology#EmotionGeneratedByMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://arsemotica.di.unito.it/ontology#ExpressOppositeEmotion
+<http://arsemotica.di.unito.it/ontology#ExpressOppositeEmotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsemotica.di.unito.it/ontology#ExpressOppositeEmotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+# 
+# http://arsemotica.di.unito.it/ontology#direct_reference
+<http://arsemotica.di.unito.it/ontology#direct_reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://arsemotica.di.unito.it/ontology#hasEmotionalWord
+<http://arsemotica.di.unito.it/ontology#hasEmotionalWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsemotica.di.unito.it/ontology#hasEmotionalWord> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://arsemotica.di.unito.it/ontology#hasOpposite
+<http://arsemotica.di.unito.it/ontology#hasOpposite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsemotica.di.unito.it/ontology#hasOpposite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://arsemotica.di.unito.it/ontology#hasOpposite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://arsemotica.di.unito.it/ontology#hasOpposite> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#hasOpposite> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+# 
+# http://arsemotica.di.unito.it/ontology#hasSibling
+<http://arsemotica.di.unito.it/ontology#hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsemotica.di.unito.it/ontology#hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://arsemotica.di.unito.it/ontology#hasSibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://arsemotica.di.unito.it/ontology#hasSibling> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#hasSibling> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+# 
+# http://arsemotica.di.unito.it/ontology#isComposedOf
+<http://arsemotica.di.unito.it/ontology#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://arsemotica.di.unito.it/ontology#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://arsemotica.di.unito.it/ontology#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://arsemotica.di.unito.it/ontology#isComposedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+<http://arsemotica.di.unito.it/ontology#isComposedOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+# 
+# http://arsemotica.di.unito.it/ontology#operateNear
+<http://arsemotica.di.unito.it/ontology#operateNear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://literary_characters_psycological_profiles.owl#denotes_emotion
+<http://literary_characters_psycological_profiles.owl#denotes_emotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://literary_characters_psycological_profiles.owl#denotes_emotion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsemotica.di.unito.it/ontology#Word> .
+<http://literary_characters_psycological_profiles.owl#denotes_emotion> <http://www.w3.org/2000/01/rdf-schema#range> <http://arsemotica.di.unito.it/ontology#Emotion> .
+# 
+# http://literary_characters_psycological_profiles.owl#described_by_word
+<http://literary_characters_psycological_profiles.owl#described_by_word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://literary_characters_psycological_profiles.owl#described_by_word> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/ma-ont#Agent> .
+<http://literary_characters_psycological_profiles.owl#described_by_word> <http://www.w3.org/2000/01/rdf-schema#range> <http://lemon-model.net/lemon#Word> .
+<http://lemon-model.net/lemon#Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://literary_characters_psycological_profiles.owl#has_Personality
+<http://literary_characters_psycological_profiles.owl#has_Personality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://literary_characters_psycological_profiles.owl#has_Personality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://literary_characters_psycological_profiles.owl#Narrative_Roles> .
+<http://literary_characters_psycological_profiles.owl#has_Personality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/ma-ont#Agent> .
+<http://literary_characters_psycological_profiles.owl#has_Personality> <http://www.w3.org/2000/01/rdf-schema#range> <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+# 
+# http://www.w3.org/ns/ma-ont#hasCreator
+<http://www.w3.org/ns/ma-ont#hasCreator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://arsemotica.di.unito.it/ontology#hasScore
+<http://arsemotica.di.unito.it/ontology#hasScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://arsemotica.di.unito.it/ontology#hasScore> <http://www.w3.org/2000/01/rdf-schema#domain> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#hasScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# http://www.w3.org/ns/ma-ont#title
+<http://www.w3.org/ns/ma-ont#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://arsemotica.di.unito.it/ontology#Acceptance
+<http://arsemotica.di.unito.it/ontology#Acceptance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Acceptance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Trust> .
+<http://arsemotica.di.unito.it/ontology#Acceptance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#hasValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Admiration
+<http://arsemotica.di.unito.it/ontology#Admiration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Admiration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Trust> .
+<http://arsemotica.di.unito.it/ontology#Admiration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#hasValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Aggressiveness
+<http://arsemotica.di.unito.it/ontology#Aggressiveness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Aggressiveness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+<http://arsemotica.di.unito.it/ontology#Aggressiveness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Anger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Aggressiveness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Anticipation> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Amazement
+<http://arsemotica.di.unito.it/ontology#Amazement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Amazement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Surprise> .
+<http://arsemotica.di.unito.it/ontology#Amazement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#hasValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Anger
+<http://arsemotica.di.unito.it/ontology#Anger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Anger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#Anger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://arsemotica.di.unito.it/ontology#Terror> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasOpposite> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Anger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Disgust> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Anticipation> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasSibling> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Anger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Annoyance
+<http://arsemotica.di.unito.it/ontology#Annoyance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Annoyance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Anger> .
+<http://arsemotica.di.unito.it/ontology#Annoyance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#hasValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Anticipation
+<http://arsemotica.di.unito.it/ontology#Anticipation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Anticipation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#Anticipation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://arsemotica.di.unito.it/ontology#Surprise> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasOpposite> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Anticipation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Joy> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Anger> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasSibling> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Anticipation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#hasValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Apprehension
+<http://arsemotica.di.unito.it/ontology#Apprehension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Apprehension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Terror> .
+<http://arsemotica.di.unito.it/ontology#Apprehension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#hasValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Awe
+<http://arsemotica.di.unito.it/ontology#Awe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Awe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+<http://arsemotica.di.unito.it/ontology#Awe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Surprise> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Awe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Terror> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#BasicEmotion
+<http://arsemotica.di.unito.it/ontology#BasicEmotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#BasicEmotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Emotion> .
+<http://arsemotica.di.unito.it/ontology#BasicEmotion> <http://www.w3.org/2002/07/owl#disjointWith> <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+# 
+# http://arsemotica.di.unito.it/ontology#Boredom
+<http://arsemotica.di.unito.it/ontology#Boredom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Boredom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Disgust> .
+<http://arsemotica.di.unito.it/ontology#Boredom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#hasValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#ComplexEmotion
+<http://arsemotica.di.unito.it/ontology#ComplexEmotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#ComplexEmotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Emotion> .
+# 
+# http://arsemotica.di.unito.it/ontology#Contempt
+<http://arsemotica.di.unito.it/ontology#Contempt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Contempt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+<http://arsemotica.di.unito.it/ontology#Contempt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Anger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Contempt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Disgust> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Disapproval
+<http://arsemotica.di.unito.it/ontology#Disapproval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Disapproval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+<http://arsemotica.di.unito.it/ontology#Disapproval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Sadness> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Disapproval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Surprise> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Disgust
+<http://arsemotica.di.unito.it/ontology#Disgust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Disgust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#Disgust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://arsemotica.di.unito.it/ontology#Trust> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasOpposite> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Disgust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#unionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Sadness> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Anger> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasSibling> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Disgust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#hasValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Distraction
+<http://arsemotica.di.unito.it/ontology#Distraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Distraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Surprise> .
+<http://arsemotica.di.unito.it/ontology#Distraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#hasValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Ecstacy
+<http://arsemotica.di.unito.it/ontology#Ecstacy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Ecstacy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Joy> .
+<http://arsemotica.di.unito.it/ontology#Ecstacy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#hasValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Emotion
+<http://arsemotica.di.unito.it/ontology#Emotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://arsemotica.di.unito.it/ontology#Fear
+<http://arsemotica.di.unito.it/ontology#Fear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Fear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Terror> .
+<http://arsemotica.di.unito.it/ontology#Fear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#hasValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Grief
+<http://arsemotica.di.unito.it/ontology#Grief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Grief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Sadness> .
+<http://arsemotica.di.unito.it/ontology#Grief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#hasValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Interest
+<http://arsemotica.di.unito.it/ontology#Interest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Interest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Anticipation> .
+<http://arsemotica.di.unito.it/ontology#Interest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#hasValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#ItalianWord
+<http://arsemotica.di.unito.it/ontology#ItalianWord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#ItalianWord> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://arsemotica.di.unito.it/ontology#Joy
+<http://arsemotica.di.unito.it/ontology#Joy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Joy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#Joy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://arsemotica.di.unito.it/ontology#Sadness> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasOpposite> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Joy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#unionOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Trust> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Anticipation> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasSibling> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Joy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#hasValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Lemon_Import
+<http://arsemotica.di.unito.it/ontology#Lemon_Import> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://arsemotica.di.unito.it/ontology#Loathing
+<http://arsemotica.di.unito.it/ontology#Loathing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Loathing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Disgust> .
+<http://arsemotica.di.unito.it/ontology#Loathing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#hasValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Love
+<http://arsemotica.di.unito.it/ontology#Love> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Love> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+<http://arsemotica.di.unito.it/ontology#Love> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Joy> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Love> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Trust> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Optimism
+<http://arsemotica.di.unito.it/ontology#Optimism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Optimism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+<http://arsemotica.di.unito.it/ontology#Optimism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Anticipation> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Optimism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Joy> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Pensiveness
+<http://arsemotica.di.unito.it/ontology#Pensiveness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Pensiveness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Sadness> .
+<http://arsemotica.di.unito.it/ontology#Pensiveness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#hasValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Rage
+<http://arsemotica.di.unito.it/ontology#Rage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Rage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Anger> .
+<http://arsemotica.di.unito.it/ontology#Rage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#hasValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Remorse
+<http://arsemotica.di.unito.it/ontology#Remorse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Remorse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+<http://arsemotica.di.unito.it/ontology#Remorse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Disgust> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Remorse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Sadness> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Sadness
+<http://arsemotica.di.unito.it/ontology#Sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Sadness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#Sadness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://arsemotica.di.unito.it/ontology#Joy> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasOpposite> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Sadness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#unionOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Surprise> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Disgust> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasSibling> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Sadness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#hasValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Serenity
+<http://arsemotica.di.unito.it/ontology#Serenity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Serenity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Joy> .
+<http://arsemotica.di.unito.it/ontology#Serenity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#hasValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Submission
+<http://arsemotica.di.unito.it/ontology#Submission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Submission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+<http://arsemotica.di.unito.it/ontology#Submission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Terror> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Submission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://arsemotica.di.unito.it/ontology#Trust> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#isComposedOf> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Surprise
+<http://arsemotica.di.unito.it/ontology#Surprise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Surprise> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#Surprise> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://arsemotica.di.unito.it/ontology#Anticipation> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasOpposite> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Surprise> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#unionOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Terror> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Sadness> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasSibling> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Surprise> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#hasValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Terror
+<http://arsemotica.di.unito.it/ontology#Terror> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Terror> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#Terror> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://arsemotica.di.unito.it/ontology#Anger> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasOpposite> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Terror> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#unionOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Trust> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Surprise> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasSibling> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Terror> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#hasValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Trust
+<http://arsemotica.di.unito.it/ontology#Trust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Trust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+<http://arsemotica.di.unito.it/ontology#Trust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://arsemotica.di.unito.it/ontology#Disgust> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasOpposite> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Trust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#unionOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Terror> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Joy> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasSibling> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://arsemotica.di.unito.it/ontology#Trust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#hasValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Vigilance
+<http://arsemotica.di.unito.it/ontology#Vigilance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Vigilance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Anticipation> .
+<http://arsemotica.di.unito.it/ontology#Vigilance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/2002/07/owl#hasValue> "3.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://arsemotica.di.unito.it/ontology#hasScore> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://arsemotica.di.unito.it/ontology#Word
+<http://arsemotica.di.unito.it/ontology#Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://arsemotica.di.unito.it/ontology#Wordnet_Sense
+<http://arsemotica.di.unito.it/ontology#Wordnet_Sense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://arsemotica.di.unito.it/ontology#Wordnet_Sense> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://lemon-model.net/lemon#LexicalSense> .
+<http://lemon-model.net/lemon#LexicalSense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://lemon-model.net/lemon#LexicalSense
+# 
+# http://lemon-model.net/lemon#Word
+# 
+# http://lemon-model.net/lemon#generates
+<http://lemon-model.net/lemon#generates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lemon-model.net/lemon#generates> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Lemon_Import> .
+# 
+# http://literary_characters_psycological_profiles.owl#Agreeablness
+<http://literary_characters_psycological_profiles.owl#Agreeablness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Agreeablness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+# 
+# http://literary_characters_psycological_profiles.owl#Antagonistic
+<http://literary_characters_psycological_profiles.owl#Antagonistic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Antagonistic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Agreeablness> .
+<http://literary_characters_psycological_profiles.owl#Antagonistic> <http://www.w3.org/2002/07/owl#disjointWith> <http://literary_characters_psycological_profiles.owl#Compassionate> .
+# 
+# http://literary_characters_psycological_profiles.owl#Antagonistic_Words
+<http://literary_characters_psycological_profiles.owl#Antagonistic_Words> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Antagonistic_Words> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://literary_characters_psycological_profiles.owl#AntiHero
+<http://literary_characters_psycological_profiles.owl#AntiHero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#AntiHero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Narrative_Roles> .
+<http://literary_characters_psycological_profiles.owl#AntiHero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid82 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#unionOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#OpenMinded> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Nervous> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Introvert> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Antagonistic> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://literary_characters_psycological_profiles.owl#has_Personality> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://literary_characters_psycological_profiles.owl#Careless
+<http://literary_characters_psycological_profiles.owl#Careless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Careless> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Conscientiousness> .
+<http://literary_characters_psycological_profiles.owl#Careless> <http://www.w3.org/2002/07/owl#disjointWith> <http://literary_characters_psycological_profiles.owl#Organized> .
+# 
+# http://literary_characters_psycological_profiles.owl#Carelessness_Denoting_Words
+<http://literary_characters_psycological_profiles.owl#Carelessness_Denoting_Words> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Carelessness_Denoting_Words> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://literary_characters_psycological_profiles.owl#Cautious
+<http://literary_characters_psycological_profiles.owl#Cautious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Cautious> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Openness> .
+# 
+# http://literary_characters_psycological_profiles.owl#Cautiousness_denoting_Words
+<http://literary_characters_psycological_profiles.owl#Cautiousness_denoting_Words> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Cautiousness_denoting_Words> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://literary_characters_psycological_profiles.owl#Compassion_denoting_Words
+<http://literary_characters_psycological_profiles.owl#Compassion_denoting_Words> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Compassion_denoting_Words> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://literary_characters_psycological_profiles.owl#Compassionate
+<http://literary_characters_psycological_profiles.owl#Compassionate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Compassionate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Agreeablness> .
+# 
+# http://literary_characters_psycological_profiles.owl#Conscientiousness
+<http://literary_characters_psycological_profiles.owl#Conscientiousness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Conscientiousness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+# 
+# http://literary_characters_psycological_profiles.owl#Extraversion
+<http://literary_characters_psycological_profiles.owl#Extraversion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Extraversion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+# 
+# http://literary_characters_psycological_profiles.owl#Extroversion_denoting_Words
+<http://literary_characters_psycological_profiles.owl#Extroversion_denoting_Words> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Extroversion_denoting_Words> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://literary_characters_psycological_profiles.owl#Extrovert
+<http://literary_characters_psycological_profiles.owl#Extrovert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Extrovert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Extraversion> .
+<http://literary_characters_psycological_profiles.owl#Extrovert> <http://www.w3.org/2002/07/owl#disjointWith> <http://literary_characters_psycological_profiles.owl#Introvert> .
+# 
+# http://literary_characters_psycological_profiles.owl#Hero
+<http://literary_characters_psycological_profiles.owl#Hero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Hero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Narrative_Roles> .
+<http://literary_characters_psycological_profiles.owl#Hero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+_:genid89 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid90 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid92 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Safeguarding> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Organized> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#OpenMinded> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Extrovert> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Compassionate> .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <http://literary_characters_psycological_profiles.owl#has_Personality> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://literary_characters_psycological_profiles.owl#Hero> <http://www.w3.org/2002/07/owl#disjointWith> <http://literary_characters_psycological_profiles.owl#Villain> .
+# 
+# http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word
+<http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://literary_characters_psycological_profiles.owl#Introvert
+<http://literary_characters_psycological_profiles.owl#Introvert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Introvert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Extraversion> .
+# 
+# http://literary_characters_psycological_profiles.owl#Narrative_Roles
+<http://literary_characters_psycological_profiles.owl#Narrative_Roles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Narrative_Roles> <http://www.w3.org/2002/07/owl#disjointWith> <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+# 
+# http://literary_characters_psycological_profiles.owl#Nervous
+<http://literary_characters_psycological_profiles.owl#Nervous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Nervous> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Neuroticism> .
+<http://literary_characters_psycological_profiles.owl#Nervous> <http://www.w3.org/2002/07/owl#disjointWith> <http://literary_characters_psycological_profiles.owl#Safeguarding> .
+# 
+# http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words
+<http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://literary_characters_psycological_profiles.owl#Neuroticism
+<http://literary_characters_psycological_profiles.owl#Neuroticism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Neuroticism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+# 
+# http://literary_characters_psycological_profiles.owl#OpenMinded
+<http://literary_characters_psycological_profiles.owl#OpenMinded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#OpenMinded> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Openness> .
+# 
+# http://literary_characters_psycological_profiles.owl#OpenMindedness_denoting_Words
+<http://literary_characters_psycological_profiles.owl#OpenMindedness_denoting_Words> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#OpenMindedness_denoting_Words> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://literary_characters_psycological_profiles.owl#Openness
+<http://literary_characters_psycological_profiles.owl#Openness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Openness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+# 
+# http://literary_characters_psycological_profiles.owl#Organized
+<http://literary_characters_psycological_profiles.owl#Organized> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Organized> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Conscientiousness> .
+# 
+# http://literary_characters_psycological_profiles.owl#Organized_Words
+<http://literary_characters_psycological_profiles.owl#Organized_Words> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Organized_Words> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://literary_characters_psycological_profiles.owl#Personality_Profiles
+<http://literary_characters_psycological_profiles.owl#Personality_Profiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://literary_characters_psycological_profiles.owl#Safeguard_denoting_Words
+<http://literary_characters_psycological_profiles.owl#Safeguard_denoting_Words> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Safeguard_denoting_Words> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Word> .
+# 
+# http://literary_characters_psycological_profiles.owl#Safeguarding
+<http://literary_characters_psycological_profiles.owl#Safeguarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Safeguarding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Neuroticism> .
+# 
+# http://literary_characters_psycological_profiles.owl#Villain
+<http://literary_characters_psycological_profiles.owl#Villain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://literary_characters_psycological_profiles.owl#Villain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://literary_characters_psycological_profiles.owl#Narrative_Roles> .
+<http://literary_characters_psycological_profiles.owl#Villain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid98 .
+_:genid98 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid99 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid101 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Nervous> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Cautious> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Careless> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://literary_characters_psycological_profiles.owl#Antagonistic> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/2002/07/owl#onProperty> <http://literary_characters_psycological_profiles.owl#has_Personality> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Lemon_Import> .
+# 
+# http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://org.semanticweb.owlapi/error#Error2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://arsemotica.di.unito.it/ontology#Lemon_Import> .
+# 
+# http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/ns/ma-ont#Agent> .
+# 
+# http://www.w3.org/ns/ma-ont#Agent
+<http://www.w3.org/ns/ma-ont#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://arsemotica.di.unito.it/artifacts#Anger
+<http://arsemotica.di.unito.it/artifacts#Anger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://arsemotica.di.unito.it/artifacts#Anger> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/page/Anger> .
+<http://arsemotica.di.unito.it/artifacts#Anger> <http://arsemotica.di.unito.it/ontology#hasOpposite> <http://arsemotica.di.unito.it/artifacts#Love> .
+# 
+# http://dbpedia.org/page/Anger
+# 
+# http://arsemotica.di.unito.it/artifacts#Love
+<http://arsemotica.di.unito.it/artifacts#Love> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://arsemotica.di.unito.it/artifacts#Love> <http://www.w3.org/2002/07/owl#sameAs> <http://dbpedia.org/page/Love> .
+# 
+# http://dbpedia.org/page/Love
+# 
+# http://arsemotica.di.unito.it/ontology#AkiraZakamoto
+<http://arsemotica.di.unito.it/ontology#AkiraZakamoto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://arsemotica.di.unito.it/ontology#AkiraZakamoto> <http://arsemotica.di.unito.it/ontology#operateNear> <http://dbpedia.org/page/Turin> .
+# 
+# http://arsemotica.di.unito.it/ontology#preoccupato
+<http://arsemotica.di.unito.it/ontology#preoccupato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://arsemotica.di.unito.it/ontology#preoccupato> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words> .
+# 
+# http://arsemotica.di.unito.it/ontology#vergogna
+<http://arsemotica.di.unito.it/ontology#vergogna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://arsemotica.di.unito.it/ontology#vergogna> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word> .
+# 
+# http://dbpedia.org/page/Anger
+<http://dbpedia.org/page/Anger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://dbpedia.org/page/Love
+<http://dbpedia.org/page/Love> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://dbpedia.org/page/Turin
+<http://dbpedia.org/page/Turin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://literary_characters_psycological_profiles.owl#Antagonism
+<http://literary_characters_psycological_profiles.owl#Antagonism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://literary_characters_psycological_profiles.owl#Antagonism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://literary_characters_psycological_profiles.owl#Antagonistic> .
+# 
+# http://literary_characters_psycological_profiles.owl#Nervous_Personality
+<http://literary_characters_psycological_profiles.owl#Nervous_Personality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://literary_characters_psycological_profiles.owl#Nervous_Personality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://literary_characters_psycological_profiles.owl#Nervous> .
+# 
+_:genid106 <http://www.w3.org/2002/07/owl#hasValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+_:genid107 <http://www.w3.org/2002/07/owl#hasValue> "2.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://dbpedia.org/page/Terror> <http://www.w3.org/2000/01/rdf-schema#comment> "http://dbpedia.org/page/Terror" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid108 <http://www.w3.org/2002/07/owl#members> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Submission> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Remorse> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Optimism> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Love> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Disapproval> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Contempt> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Awe> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Aggressiveness> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid117 <http://www.w3.org/2002/07/owl#members> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Trust> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Terror> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Surprise> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Sadness> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Joy> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Disgust> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Anticipation> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://arsemotica.di.unito.it/ontology#Anger> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl#x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#z> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#Introvert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid126 <http://www.w3.org/2003/11/swrl#body> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid128 .
+_:genid128 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z> .
+_:genid128 <http://www.w3.org/2003/11/swrl#classPredicate> <http://literary_characters_psycological_profiles.owl#Antagonistic_Words> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid130 .
+_:genid130 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z> .
+_:genid130 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+_:genid130 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#described_by_word> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid132 .
+_:genid132 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+_:genid132 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.w3.org/ns/ma-ont#Agent> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid126 <http://www.w3.org/2003/11/swrl#head> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid134 .
+_:genid134 <http://www.w3.org/2003/11/swrl#argument2> <http://literary_characters_psycological_profiles.owl#Antagonism> .
+_:genid134 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+_:genid134 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#has_Personality> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid135 <http://www.w3.org/2003/11/swrl#body> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid137 .
+_:genid137 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z> .
+_:genid137 <http://www.w3.org/2003/11/swrl#classPredicate> <http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid139 .
+_:genid139 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z> .
+_:genid139 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+_:genid139 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#described_by_word> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid141 .
+_:genid141 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+_:genid141 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.w3.org/ns/ma-ont#Agent> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid135 <http://www.w3.org/2003/11/swrl#head> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid143 .
+_:genid143 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#Introvert> .
+_:genid143 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+_:genid143 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#has_Personality> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid144 <http://www.w3.org/2003/11/swrl#body> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid146 .
+_:genid146 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z> .
+_:genid146 <http://www.w3.org/2003/11/swrl#classPredicate> <http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words> .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid148 .
+_:genid148 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z> .
+_:genid148 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+_:genid148 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#described_by_word> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid150 .
+_:genid150 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+_:genid150 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.w3.org/ns/ma-ont#Agent> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid144 <http://www.w3.org/2003/11/swrl#head> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid152 .
+_:genid152 <http://www.w3.org/2003/11/swrl#argument2> <http://literary_characters_psycological_profiles.owl#Nervous_Personality> .
+_:genid152 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> .
+_:genid152 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#has_Personality> .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

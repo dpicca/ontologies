@@ -1,0 +1,1009 @@
+@prefix : <http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl#> .
+
+<http://github.com/dpicca/ontologies/literary_characters_psychologica_profiles.owl> rdf:type owl:Ontology ;
+                                                                                     owl:versionIRI <https://raw.githubusercontent.com/modellingDH/character-profiling/main/model.ttl> ;
+                                                                                     owl:imports <http://lemon-model.net/lemon> ,
+                                                                                                 <http://www.w3.org/ns/ma-ont#> ;
+                                                                                     <http://purl.org/dc/elements/1.1/creator> <http://orcid.org/0000-0002-1740-519X> ,
+                                                                                                                               <http://orcid.org/0000-0002-8323-8764> ,
+                                                                                                                               <http://orcid.org/0000-0003-2014-0855> ;
+                                                                                     <http://purl.org/dc/elements/1.1/title> "Characters Profiles Ontology (CPO)" ;
+                                                                                     rdfs:comment "Literary Characters Profile Ontology aligned with FOAF, Lemon and the ArsEmotica Ontology. In this release, the classes concerning the emotion are also linked to DBpedia according to the Linked Data framework." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#hasValue
+owl:hasValue rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://arsemotica.di.unito.it/artifacts#hasEmotion
+<http://arsemotica.di.unito.it/artifacts#hasEmotion> rdf:type owl:ObjectProperty ;
+                                                     owl:inverseOf <http://arsemotica.di.unito.it/ontology#EmotionGeneratedByMedia> ;
+                                                     rdfs:range <http://arsemotica.di.unito.it/ontology#Emotion> .
+
+
+###  http://arsemotica.di.unito.it/ontology#EmotionGeneratedByMedia
+<http://arsemotica.di.unito.it/ontology#EmotionGeneratedByMedia> rdf:type owl:ObjectProperty .
+
+
+###  http://arsemotica.di.unito.it/ontology#ExpressOppositeEmotion
+<http://arsemotica.di.unito.it/ontology#ExpressOppositeEmotion> rdf:type owl:ObjectProperty ,
+                                                                         owl:SymmetricProperty .
+
+
+###  http://arsemotica.di.unito.it/ontology#direct_reference
+<http://arsemotica.di.unito.it/ontology#direct_reference> rdf:type owl:ObjectProperty .
+
+
+###  http://arsemotica.di.unito.it/ontology#hasEmotionalWord
+<http://arsemotica.di.unito.it/ontology#hasEmotionalWord> rdf:type owl:ObjectProperty ;
+                                                          rdfs:range <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://arsemotica.di.unito.it/ontology#hasOpposite
+<http://arsemotica.di.unito.it/ontology#hasOpposite> rdf:type owl:ObjectProperty ,
+                                                              owl:AsymmetricProperty ,
+                                                              owl:IrreflexiveProperty ;
+                                                     rdfs:domain <http://arsemotica.di.unito.it/ontology#BasicEmotion> ;
+                                                     rdfs:range <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+
+
+###  http://arsemotica.di.unito.it/ontology#hasSibling
+<http://arsemotica.di.unito.it/ontology#hasSibling> rdf:type owl:ObjectProperty ,
+                                                             owl:AsymmetricProperty ,
+                                                             owl:IrreflexiveProperty ;
+                                                    rdfs:domain <http://arsemotica.di.unito.it/ontology#BasicEmotion> ;
+                                                    rdfs:range <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+
+
+###  http://arsemotica.di.unito.it/ontology#isComposedOf
+<http://arsemotica.di.unito.it/ontology#isComposedOf> rdf:type owl:ObjectProperty ,
+                                                               owl:AsymmetricProperty ,
+                                                               owl:IrreflexiveProperty ;
+                                                      rdfs:domain <http://arsemotica.di.unito.it/ontology#ComplexEmotion> ;
+                                                      rdfs:range <http://arsemotica.di.unito.it/ontology#BasicEmotion> .
+
+
+###  http://arsemotica.di.unito.it/ontology#operateNear
+<http://arsemotica.di.unito.it/ontology#operateNear> rdf:type owl:ObjectProperty .
+
+
+###  http://literary_characters_psycological_profiles.owl#denotes_emotion
+<http://literary_characters_psycological_profiles.owl#denotes_emotion> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain <http://arsemotica.di.unito.it/ontology#Word> ;
+                                                                       rdfs:range <http://arsemotica.di.unito.it/ontology#Emotion> .
+
+
+###  http://literary_characters_psycological_profiles.owl#described_by_word
+<http://literary_characters_psycological_profiles.owl#described_by_word> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:domain <http://www.w3.org/ns/ma-ont#Agent> ;
+                                                                         rdfs:range <http://lemon-model.net/lemon#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#has_Personality
+<http://literary_characters_psycological_profiles.owl#has_Personality> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain <http://literary_characters_psycological_profiles.owl#Narrative_Roles> ,
+                                                                                   <http://www.w3.org/ns/ma-ont#Agent> ;
+                                                                       rdfs:range <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+
+
+###  http://www.w3.org/ns/ma-ont#hasCreator
+<http://www.w3.org/ns/ma-ont#hasCreator> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://arsemotica.di.unito.it/ontology#hasScore
+<http://arsemotica.di.unito.it/ontology#hasScore> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://arsemotica.di.unito.it/ontology#BasicEmotion> ;
+                                                  rdfs:range xsd:double .
+
+
+###  http://www.w3.org/ns/ma-ont#title
+<http://www.w3.org/ns/ma-ont#title> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://arsemotica.di.unito.it/ontology#Acceptance
+<http://arsemotica.di.unito.it/ontology#Acceptance> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Trust> ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                      owl:hasValue "1.0"^^xsd:double
+                                                                    ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Admiration
+<http://arsemotica.di.unito.it/ontology#Admiration> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Trust> ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                      owl:hasValue "3.0"^^xsd:double
+                                                                    ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Aggressiveness
+<http://arsemotica.di.unito.it/ontology#Aggressiveness> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#ComplexEmotion> ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                          owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Anger>
+                                                                        ] ,
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                          owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Anticipation>
+                                                                        ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Amazement
+<http://arsemotica.di.unito.it/ontology#Amazement> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Surprise> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                     owl:hasValue "3.0"^^xsd:double
+                                                                   ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Anger
+<http://arsemotica.di.unito.it/ontology#Anger> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#BasicEmotion> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://arsemotica.di.unito.it/ontology#hasOpposite> ;
+                                                                 owl:allValuesFrom <http://arsemotica.di.unito.it/ontology#Terror>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://arsemotica.di.unito.it/ontology#hasSibling> ;
+                                                                 owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                     owl:unionOf ( <http://arsemotica.di.unito.it/ontology#Anticipation>
+                                                                                                   <http://arsemotica.di.unito.it/ontology#Disgust>
+                                                                                                 )
+                                                                                   ]
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                 owl:hasValue "2.0"^^xsd:double
+                                                               ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Annoyance
+<http://arsemotica.di.unito.it/ontology#Annoyance> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Anger> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                     owl:hasValue "1.0"^^xsd:double
+                                                                   ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Anticipation
+<http://arsemotica.di.unito.it/ontology#Anticipation> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#BasicEmotion> ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <http://arsemotica.di.unito.it/ontology#hasOpposite> ;
+                                                                        owl:allValuesFrom <http://arsemotica.di.unito.it/ontology#Surprise>
+                                                                      ] ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <http://arsemotica.di.unito.it/ontology#hasSibling> ;
+                                                                        owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                            owl:unionOf ( <http://arsemotica.di.unito.it/ontology#Anger>
+                                                                                                          <http://arsemotica.di.unito.it/ontology#Joy>
+                                                                                                        )
+                                                                                          ]
+                                                                      ] ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                        owl:hasValue "2.0"^^xsd:double
+                                                                      ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Apprehension
+<http://arsemotica.di.unito.it/ontology#Apprehension> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Terror> ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                        owl:hasValue "1.0"^^xsd:double
+                                                                      ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Awe
+<http://arsemotica.di.unito.it/ontology#Awe> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#ComplexEmotion> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                               owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Surprise>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                               owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Terror>
+                                                             ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#BasicEmotion
+<http://arsemotica.di.unito.it/ontology#BasicEmotion> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Emotion> ;
+                                                      owl:disjointWith <http://arsemotica.di.unito.it/ontology#ComplexEmotion> .
+
+
+###  http://arsemotica.di.unito.it/ontology#Boredom
+<http://arsemotica.di.unito.it/ontology#Boredom> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Disgust> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                   owl:hasValue "1.0"^^xsd:double
+                                                                 ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#ComplexEmotion
+<http://arsemotica.di.unito.it/ontology#ComplexEmotion> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Emotion> .
+
+
+###  http://arsemotica.di.unito.it/ontology#Contempt
+<http://arsemotica.di.unito.it/ontology#Contempt> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#ComplexEmotion> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                    owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Anger>
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                    owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Disgust>
+                                                                  ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Disapproval
+<http://arsemotica.di.unito.it/ontology#Disapproval> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#ComplexEmotion> ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                       owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Sadness>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                       owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Surprise>
+                                                                     ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Disgust
+<http://arsemotica.di.unito.it/ontology#Disgust> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#BasicEmotion> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://arsemotica.di.unito.it/ontology#hasOpposite> ;
+                                                                   owl:allValuesFrom <http://arsemotica.di.unito.it/ontology#Trust>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://arsemotica.di.unito.it/ontology#hasSibling> ;
+                                                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                       owl:unionOf ( <http://arsemotica.di.unito.it/ontology#Anger>
+                                                                                                     <http://arsemotica.di.unito.it/ontology#Sadness>
+                                                                                                   )
+                                                                                     ]
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                   owl:hasValue "2.0"^^xsd:double
+                                                                 ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Distraction
+<http://arsemotica.di.unito.it/ontology#Distraction> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Surprise> ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                       owl:hasValue "1.0"^^xsd:double
+                                                                     ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Ecstacy
+<http://arsemotica.di.unito.it/ontology#Ecstacy> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Joy> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                   owl:hasValue "3.0"^^xsd:double
+                                                                 ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Emotion
+<http://arsemotica.di.unito.it/ontology#Emotion> rdf:type owl:Class .
+
+
+###  http://arsemotica.di.unito.it/ontology#Fear
+<http://arsemotica.di.unito.it/ontology#Fear> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Terror> ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                owl:hasValue "3.0"^^xsd:double
+                                                              ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Grief
+<http://arsemotica.di.unito.it/ontology#Grief> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Sadness> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                 owl:hasValue "3.0"^^xsd:double
+                                                               ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Interest
+<http://arsemotica.di.unito.it/ontology#Interest> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Anticipation> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                    owl:hasValue "1.0"^^xsd:double
+                                                                  ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#ItalianWord
+<http://arsemotica.di.unito.it/ontology#ItalianWord> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://arsemotica.di.unito.it/ontology#Joy
+<http://arsemotica.di.unito.it/ontology#Joy> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#BasicEmotion> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://arsemotica.di.unito.it/ontology#hasOpposite> ;
+                                                               owl:allValuesFrom <http://arsemotica.di.unito.it/ontology#Sadness>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://arsemotica.di.unito.it/ontology#hasSibling> ;
+                                                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                   owl:unionOf ( <http://arsemotica.di.unito.it/ontology#Anticipation>
+                                                                                                 <http://arsemotica.di.unito.it/ontology#Trust>
+                                                                                               )
+                                                                                 ]
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                               owl:hasValue "2.0"^^xsd:double
+                                                             ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Lemon_Import
+<http://arsemotica.di.unito.it/ontology#Lemon_Import> rdf:type owl:Class .
+
+
+###  http://arsemotica.di.unito.it/ontology#Loathing
+<http://arsemotica.di.unito.it/ontology#Loathing> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Disgust> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                    owl:hasValue "3.0"^^xsd:double
+                                                                  ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Love
+<http://arsemotica.di.unito.it/ontology#Love> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#ComplexEmotion> ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Joy>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Trust>
+                                                              ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Optimism
+<http://arsemotica.di.unito.it/ontology#Optimism> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#ComplexEmotion> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                    owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Anticipation>
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                    owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Joy>
+                                                                  ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Pensiveness
+<http://arsemotica.di.unito.it/ontology#Pensiveness> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Sadness> ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                       owl:hasValue "1.0"^^xsd:double
+                                                                     ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Rage
+<http://arsemotica.di.unito.it/ontology#Rage> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Anger> ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                owl:hasValue "3.0"^^xsd:double
+                                                              ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Remorse
+<http://arsemotica.di.unito.it/ontology#Remorse> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#ComplexEmotion> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                   owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Disgust>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                   owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Sadness>
+                                                                 ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Sadness
+<http://arsemotica.di.unito.it/ontology#Sadness> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#BasicEmotion> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://arsemotica.di.unito.it/ontology#hasOpposite> ;
+                                                                   owl:allValuesFrom <http://arsemotica.di.unito.it/ontology#Joy>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://arsemotica.di.unito.it/ontology#hasSibling> ;
+                                                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                       owl:unionOf ( <http://arsemotica.di.unito.it/ontology#Disgust>
+                                                                                                     <http://arsemotica.di.unito.it/ontology#Surprise>
+                                                                                                   )
+                                                                                     ]
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                   owl:hasValue "2.0"^^xsd:double
+                                                                 ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Serenity
+<http://arsemotica.di.unito.it/ontology#Serenity> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Joy> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                    owl:hasValue "1.0"^^xsd:double
+                                                                  ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Submission
+<http://arsemotica.di.unito.it/ontology#Submission> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#ComplexEmotion> ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                      owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Terror>
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <http://arsemotica.di.unito.it/ontology#isComposedOf> ;
+                                                                      owl:someValuesFrom <http://arsemotica.di.unito.it/ontology#Trust>
+                                                                    ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Surprise
+<http://arsemotica.di.unito.it/ontology#Surprise> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#BasicEmotion> ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://arsemotica.di.unito.it/ontology#hasOpposite> ;
+                                                                    owl:allValuesFrom <http://arsemotica.di.unito.it/ontology#Anticipation>
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://arsemotica.di.unito.it/ontology#hasSibling> ;
+                                                                    owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                        owl:unionOf ( <http://arsemotica.di.unito.it/ontology#Sadness>
+                                                                                                      <http://arsemotica.di.unito.it/ontology#Terror>
+                                                                                                    )
+                                                                                      ]
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                    owl:hasValue "2.0"^^xsd:double
+                                                                  ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Terror
+<http://arsemotica.di.unito.it/ontology#Terror> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#BasicEmotion> ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://arsemotica.di.unito.it/ontology#hasOpposite> ;
+                                                                  owl:allValuesFrom <http://arsemotica.di.unito.it/ontology#Anger>
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://arsemotica.di.unito.it/ontology#hasSibling> ;
+                                                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                      owl:unionOf ( <http://arsemotica.di.unito.it/ontology#Surprise>
+                                                                                                    <http://arsemotica.di.unito.it/ontology#Trust>
+                                                                                                  )
+                                                                                    ]
+                                                                ] ,
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                  owl:hasValue "2.0"^^xsd:double
+                                                                ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Trust
+<http://arsemotica.di.unito.it/ontology#Trust> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#BasicEmotion> ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://arsemotica.di.unito.it/ontology#hasOpposite> ;
+                                                                 owl:allValuesFrom <http://arsemotica.di.unito.it/ontology#Disgust>
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://arsemotica.di.unito.it/ontology#hasSibling> ;
+                                                                 owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                     owl:unionOf ( <http://arsemotica.di.unito.it/ontology#Joy>
+                                                                                                   <http://arsemotica.di.unito.it/ontology#Terror>
+                                                                                                 )
+                                                                                   ]
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                 owl:hasValue "2.0"^^xsd:double
+                                                               ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Vigilance
+<http://arsemotica.di.unito.it/ontology#Vigilance> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Anticipation> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://arsemotica.di.unito.it/ontology#hasScore> ;
+                                                                     owl:hasValue "3.0"^^xsd:double
+                                                                   ] .
+
+
+###  http://arsemotica.di.unito.it/ontology#Word
+<http://arsemotica.di.unito.it/ontology#Word> rdf:type owl:Class .
+
+
+###  http://arsemotica.di.unito.it/ontology#Wordnet_Sense
+<http://arsemotica.di.unito.it/ontology#Wordnet_Sense> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://lemon-model.net/lemon#LexicalSense> .
+
+
+###  http://lemon-model.net/lemon#LexicalSense
+<http://lemon-model.net/lemon#LexicalSense> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#Word
+<http://lemon-model.net/lemon#Word> rdf:type owl:Class .
+
+
+###  http://lemon-model.net/lemon#generates
+<http://lemon-model.net/lemon#generates> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Lemon_Import> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Agreeablness
+<http://literary_characters_psycological_profiles.owl#Agreeablness> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Antagonistic
+<http://literary_characters_psycological_profiles.owl#Antagonistic> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Agreeablness> ;
+                                                                    owl:disjointWith <http://literary_characters_psycological_profiles.owl#Compassionate> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Antagonistic_Words
+<http://literary_characters_psycological_profiles.owl#Antagonistic_Words> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#AntiHero
+<http://literary_characters_psycological_profiles.owl#AntiHero> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Narrative_Roles> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://literary_characters_psycological_profiles.owl#has_Personality> ;
+                                                                                  owl:someValuesFrom [ owl:intersectionOf ( <http://literary_characters_psycological_profiles.owl#Antagonistic>
+                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                              owl:unionOf ( <http://literary_characters_psycological_profiles.owl#Introvert>
+                                                                                                                                            <http://literary_characters_psycological_profiles.owl#Nervous>
+                                                                                                                                            <http://literary_characters_psycological_profiles.owl#OpenMinded>
+                                                                                                                                          )
+                                                                                                                            ]
+                                                                                                                          ) ;
+                                                                                                       rdf:type owl:Class
+                                                                                                     ]
+                                                                                ] .
+
+
+###  http://literary_characters_psycological_profiles.owl#Careless
+<http://literary_characters_psycological_profiles.owl#Careless> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Conscientiousness> ;
+                                                                owl:disjointWith <http://literary_characters_psycological_profiles.owl#Organized> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Carelessness_Denoting_Words
+<http://literary_characters_psycological_profiles.owl#Carelessness_Denoting_Words> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Cautious
+<http://literary_characters_psycological_profiles.owl#Cautious> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Openness> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Cautiousness_denoting_Words
+<http://literary_characters_psycological_profiles.owl#Cautiousness_denoting_Words> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Compassion_denoting_Words
+<http://literary_characters_psycological_profiles.owl#Compassion_denoting_Words> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Compassionate
+<http://literary_characters_psycological_profiles.owl#Compassionate> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Agreeablness> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Conscientiousness
+<http://literary_characters_psycological_profiles.owl#Conscientiousness> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Extraversion
+<http://literary_characters_psycological_profiles.owl#Extraversion> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Extroversion_denoting_Words
+<http://literary_characters_psycological_profiles.owl#Extroversion_denoting_Words> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Extrovert
+<http://literary_characters_psycological_profiles.owl#Extrovert> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Extraversion> ;
+                                                                 owl:disjointWith <http://literary_characters_psycological_profiles.owl#Introvert> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Hero
+<http://literary_characters_psycological_profiles.owl#Hero> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Narrative_Roles> ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://literary_characters_psycological_profiles.owl#has_Personality> ;
+                                                                              owl:someValuesFrom [ owl:intersectionOf ( <http://literary_characters_psycological_profiles.owl#Compassionate>
+                                                                                                                        [ owl:intersectionOf ( <http://literary_characters_psycological_profiles.owl#Extrovert>
+                                                                                                                                               <http://literary_characters_psycological_profiles.owl#OpenMinded>
+                                                                                                                                               <http://literary_characters_psycological_profiles.owl#Organized>
+                                                                                                                                               <http://literary_characters_psycological_profiles.owl#Safeguarding>
+                                                                                                                                             ) ;
+                                                                                                                          rdf:type owl:Class
+                                                                                                                        ]
+                                                                                                                      ) ;
+                                                                                                   rdf:type owl:Class
+                                                                                                 ]
+                                                                            ] ;
+                                                            owl:disjointWith <http://literary_characters_psycological_profiles.owl#Villain> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word
+<http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Introvert
+<http://literary_characters_psycological_profiles.owl#Introvert> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Extraversion> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Narrative_Roles
+<http://literary_characters_psycological_profiles.owl#Narrative_Roles> rdf:type owl:Class ;
+                                                                       owl:disjointWith <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Nervous
+<http://literary_characters_psycological_profiles.owl#Nervous> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Neuroticism> ;
+                                                               owl:disjointWith <http://literary_characters_psycological_profiles.owl#Safeguarding> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words
+<http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Neuroticism
+<http://literary_characters_psycological_profiles.owl#Neuroticism> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+
+
+###  http://literary_characters_psycological_profiles.owl#OpenMinded
+<http://literary_characters_psycological_profiles.owl#OpenMinded> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Openness> .
+
+
+###  http://literary_characters_psycological_profiles.owl#OpenMindedness_denoting_Words
+<http://literary_characters_psycological_profiles.owl#OpenMindedness_denoting_Words> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Openness
+<http://literary_characters_psycological_profiles.owl#Openness> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Personality_Profiles> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Organized
+<http://literary_characters_psycological_profiles.owl#Organized> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Conscientiousness> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Organized_Words
+<http://literary_characters_psycological_profiles.owl#Organized_Words> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Personality_Profiles
+<http://literary_characters_psycological_profiles.owl#Personality_Profiles> rdf:type owl:Class .
+
+
+###  http://literary_characters_psycological_profiles.owl#Safeguard_denoting_Words
+<http://literary_characters_psycological_profiles.owl#Safeguard_denoting_Words> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Word> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Safeguarding
+<http://literary_characters_psycological_profiles.owl#Safeguarding> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Neuroticism> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Villain
+<http://literary_characters_psycological_profiles.owl#Villain> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://literary_characters_psycological_profiles.owl#Narrative_Roles> ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://literary_characters_psycological_profiles.owl#has_Personality> ;
+                                                                                 owl:someValuesFrom [ owl:intersectionOf ( <http://literary_characters_psycological_profiles.owl#Antagonistic>
+                                                                                                                           [ owl:intersectionOf ( <http://literary_characters_psycological_profiles.owl#Careless>
+                                                                                                                                                  <http://literary_characters_psycological_profiles.owl#Cautious>
+                                                                                                                                                  <http://literary_characters_psycological_profiles.owl#Nervous>
+                                                                                                                                                ) ;
+                                                                                                                             rdf:type owl:Class
+                                                                                                                           ]
+                                                                                                                         ) ;
+                                                                                                      rdf:type owl:Class
+                                                                                                    ]
+                                                                               ] .
+
+
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Lemon_Import> .
+
+
+###  http://org.semanticweb.owlapi/error#Error2
+<http://org.semanticweb.owlapi/error#Error2> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://arsemotica.di.unito.it/ontology#Lemon_Import> .
+
+
+###  http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> rdf:type owl:Class ;
+                                 owl:equivalentClass <http://www.w3.org/ns/ma-ont#Agent> .
+
+
+###  http://www.w3.org/ns/ma-ont#Agent
+<http://www.w3.org/ns/ma-ont#Agent> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://arsemotica.di.unito.it/artifacts#Anger
+<http://arsemotica.di.unito.it/artifacts#Anger> rdf:type owl:NamedIndividual ;
+                                                owl:sameAs <http://dbpedia.org/page/Anger> ;
+                                                <http://arsemotica.di.unito.it/ontology#hasOpposite> <http://arsemotica.di.unito.it/artifacts#Love> .
+
+
+###  http://dbpedia.org/page/Anger
+
+###  http://arsemotica.di.unito.it/artifacts#Love
+<http://arsemotica.di.unito.it/artifacts#Love> rdf:type owl:NamedIndividual ;
+                                               owl:sameAs <http://dbpedia.org/page/Love> .
+
+
+###  http://dbpedia.org/page/Love
+
+###  http://arsemotica.di.unito.it/ontology#AkiraZakamoto
+<http://arsemotica.di.unito.it/ontology#AkiraZakamoto> rdf:type owl:NamedIndividual ;
+                                                       <http://arsemotica.di.unito.it/ontology#operateNear> <http://dbpedia.org/page/Turin> .
+
+
+###  http://arsemotica.di.unito.it/ontology#preoccupato
+<http://arsemotica.di.unito.it/ontology#preoccupato> rdf:type owl:NamedIndividual ,
+                                                              <http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words> .
+
+
+###  http://arsemotica.di.unito.it/ontology#vergogna
+<http://arsemotica.di.unito.it/ontology#vergogna> rdf:type owl:NamedIndividual ,
+                                                           <http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word> .
+
+
+###  http://dbpedia.org/page/Anger
+<http://dbpedia.org/page/Anger> rdf:type owl:NamedIndividual .
+
+
+###  http://dbpedia.org/page/Love
+<http://dbpedia.org/page/Love> rdf:type owl:NamedIndividual .
+
+
+###  http://dbpedia.org/page/Turin
+<http://dbpedia.org/page/Turin> rdf:type owl:NamedIndividual .
+
+
+###  http://literary_characters_psycological_profiles.owl#Antagonism
+<http://literary_characters_psycological_profiles.owl#Antagonism> rdf:type owl:NamedIndividual ,
+                                                                           <http://literary_characters_psycological_profiles.owl#Antagonistic> .
+
+
+###  http://literary_characters_psycological_profiles.owl#Nervous_Personality
+<http://literary_characters_psycological_profiles.owl#Nervous_Personality> rdf:type owl:NamedIndividual ,
+                                                                                    <http://literary_characters_psycological_profiles.owl#Nervous> .
+
+
+[ owl:hasValue "2.0"^^xsd:double
+] .
+
+[ owl:hasValue "2.0"^^xsd:double
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://dbpedia.org/page/Terror> rdfs:comment "http://dbpedia.org/page/Terror" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://arsemotica.di.unito.it/ontology#Aggressiveness>
+                <http://arsemotica.di.unito.it/ontology#Awe>
+                <http://arsemotica.di.unito.it/ontology#Contempt>
+                <http://arsemotica.di.unito.it/ontology#Disapproval>
+                <http://arsemotica.di.unito.it/ontology#Love>
+                <http://arsemotica.di.unito.it/ontology#Optimism>
+                <http://arsemotica.di.unito.it/ontology#Remorse>
+                <http://arsemotica.di.unito.it/ontology#Submission>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://arsemotica.di.unito.it/ontology#Anger>
+                <http://arsemotica.di.unito.it/ontology#Anticipation>
+                <http://arsemotica.di.unito.it/ontology#Disgust>
+                <http://arsemotica.di.unito.it/ontology#Joy>
+                <http://arsemotica.di.unito.it/ontology#Sadness>
+                <http://arsemotica.di.unito.it/ontology#Surprise>
+                <http://arsemotica.di.unito.it/ontology#Terror>
+                <http://arsemotica.di.unito.it/ontology#Trust>
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl#z> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl#Introvert> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.w3.org/ns/ma-ont#Agent> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#described_by_word> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <http://literary_characters_psycological_profiles.owl#Antagonistic_Words> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#has_Personality> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://literary_characters_psycological_profiles.owl#Antagonism>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.w3.org/ns/ma-ont#Agent> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#described_by_word> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <http://literary_characters_psycological_profiles.owl#Introversion_denoting_Word> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#has_Personality> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#Introvert>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.w3.org/ns/ma-ont#Agent> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#described_by_word> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <http://literary_characters_psycological_profiles.owl#Nervousness_denoting_Words> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://literary_characters_psycological_profiles.owl#has_Personality> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://literary_characters_psycological_profiles.owl#Nervous_Personality>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
